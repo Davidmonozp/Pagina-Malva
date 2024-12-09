@@ -1,0 +1,51 @@
+.home {
+  background-image: url('../assets/imagen-inicio.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.imagen-contenido {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .home {
+    background-size: auto;
+    padding-bottom: 60px;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-size: auto;
+    padding-bottom: 60px;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
+}
+@media(max-width: 480) {
+  .home {
+    background-size: 1655;   
+  }
+}

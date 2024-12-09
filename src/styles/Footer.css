@@ -1,0 +1,281 @@
+
+footer {
+  background-color: #262626;
+  min-height: 280px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-left: 0;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.footer-column {
+  margin-top: 5px;
+  margin-left: 52px;
+  color: #e0dddd;
+  flex: 1;
+  min-width: 66px;
+  max-width: 260px;
+}
+
+.footer-column.suscribete {
+  max-width: 450px;
+  flex: 1.5;
+  margin-right: 70px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #e0dddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-column h3 i {
+  font-size: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.footer-column.servicio-al-cliente ul {
+  display: block;
+  text-align: start;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+
+.footer-column a {
+  color: #B6BFC4;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+footer form {
+  margin-top: 15px;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+footer button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #0056b3;
+}
+
+footer p {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #c9c4c4;
+  text-align: start;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.checkboxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.checkboxes label {
+  color: #e0dddd;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkboxes input {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Estilo cuando el radio button está seleccionado */
+input[type="radio"]:checked {
+  background-color: #929191;
+  border-color: #888;
+}
+
+/* Estilo para cuando el radio button es hover */
+input[type="radio"]:hover {
+  border-color: #888;
+}
+
+.footer-column .newsletter-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.footer-column .newsletter-form input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.footer-column .newsletter-form button {
+  padding: 5px 15px;
+  background-color: #888888;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  height: 39px;
+}
+
+.footer-column .newsletter-form button:hover {
+  background-color: #888888;
+}
+
+.derechos {
+  text-align: center;
+}
+
+@media (max-width: 1242px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    flex: 1 1 30%;
+    min-width: 200px;
+    max-width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  footer p {
+    margin-left: -60px;
+  }
+
+  .footer-column .newsletter-form input {
+    margin-right: -33px;
+    margin-left: -73px;
+  }
+
+  .footer-column .newsletter-form button {
+    margin-left: -54px;
+  }
+
+  .derechos {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    flex-direction: column;
+    margin-left: 41px;
+    padding-top: 20px;
+  }
+
+  .footer-column {
+    margin-top: -17px;
+    margin-left: 182px;
+  }
+
+  footer p {
+    margin-left: -60px;
+  }
+
+  .footer-column .newsletter-form input {
+    margin-right: -33px;
+    margin-left: -73px;
+  }
+
+  .footer-column .newsletter-form button {
+    margin-left: -54px;
+  }
+
+  .derechos {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-column {
+    margin-top: -40px;
+    margin-left: 85px;
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+
+  footer p {
+    margin-top: -13px;
+    margin-left: 16px;
+    width: 227px;
+}
+
+  .footer-column .newsletter-form input {
+    margin-right: -13px;
+    margin-left: -28px;
+    width: 300px;
+  }
+
+  .derechos {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 135px;
+  }
+}
+
+@media (max-width: 414px) {
+  .derechos {
+    margin-top: 5px;
+    margin-left: 82px;
+  }
+}

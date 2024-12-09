@@ -1,0 +1,171 @@
+/* Estilos para el Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  padding: 25px 27px;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo-img {
+  width: 150px;
+  height: 85px;
+}
+
+/* Icono de menú */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 20px; 
+}
+
+.bar {
+  height: 2px;
+  background-color:#8C8D87; 
+  width: 100%;
+}
+
+/* Menú desplegable desde la izquierda */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: -35%; 
+  width: 25%; 
+  height: 100vh; 
+  padding: 20px;
+  background-color: #fafafa; 
+  transition: left 0.3s ease; 
+  z-index: 2; 
+  overflow-y: auto;
+}
+
+.menu-container.active {
+  left: 0;
+}
+
+.menu-nav {
+  margin-top: 20px; 
+  margin-bottom: 15px;
+
+}
+
+.menu-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: space-around; 
+}
+
+.menu-nav li {
+  margin: 10px 0; 
+}
+
+.menu-nav a {
+  color: #a3a3a3; 
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid #ececec; 
+  
+}
+
+.menu-nav a:hover {
+  color: #444; 
+  border-bottom: 2px solid black; 
+
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start; 
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  color: #939393; 
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding-bottom: 25px;
+  padding-top: 5px;
+  text-align: left; 
+  border-bottom: 2px solid #ececec;  
+  margin: -2px ;
+  margin-left: 10px;
+}
+
+.menu a:hover {
+  color: #696767;
+  border-bottom: 2px solid black; 
+}
+
+/* Botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  background-color: white;
+  color: #747272;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+
+
+
+.changing-image {
+  width: 100%; 
+  height: 26%; 
+  margin-top: 20px; 
+  display: block;
+}
+
+
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 20px; 
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .navbar {
+    width: 100%;  
+    box-sizing: border-box; 
+  }
+}
+
+
+
+
+

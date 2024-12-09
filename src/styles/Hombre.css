@@ -1,0 +1,122 @@
+.hombre {
+    background-image: url('../assets/hombre.jpg');
+    background-size: cover; 
+    background-position: center;  
+    height: 100vh;  
+    width: 100%;  
+}
+
+.scalpers {
+    color: white;
+    margin: 239px 0px 0px 63px;
+}
+
+.subtitle {
+    font-size: 23px;
+}
+.title {
+    font-size: 42px;
+    margin-top: -23px;
+}
+.description-banner {
+    letter-spacing: 0.5px;
+    margin-top: -32px;
+}
+.description {
+    letter-spacing: 0.5px;
+    margin-top: -2px;
+}
+
+.el-ganso {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 5px;
+}
+
+.imagen-contenido {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1200px){
+    .hombre {
+        background-position: 50% -20%; 
+    }
+}
+@media (max-width: 1242px) {
+    .footer-container {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex: 1 1 30%;
+      min-width: 200px;
+      max-width: 50%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    footer p {
+      margin-left: -60px;
+    }
+  
+    .footer-column .newsletter-form input {
+      margin-right: -33px;
+      margin-left: -73px;
+    }
+  
+    .footer-column .newsletter-form button {
+      margin-left: -54px;
+    }
+  
+    .derechos {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .footer-container {
+      flex-direction: column;
+      margin-left: 41px;
+      padding-top: 20px;
+    }
+  
+    .footer-column {
+      margin-top: -17px;
+      margin-left: 182px;
+    }
+  
+    footer p {
+      margin-left: -60px;
+    }
+  
+    .footer-column .newsletter-form input {
+      margin-right: -33px;
+      margin-left: -73px;
+    }
+  
+    .footer-column .newsletter-form button {
+      margin-left: -54px;
+    }
+  
+    .derechos {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .footer-column {
+      margin-top: -40px;
+      margin-left: 85px;
+      padding-top: 20px;
+      width: 100%;
+    }
+  
+  }
